@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/result.css" type="text/css">
+    <title>Resultado del Calculo</title>
+</head>
+<body>
+    <div class="menu">
+        <img class="logo" src="../static/Logotipo_allproperty.png" />
+    </div>
+
+    <!-- contenedor con los datos del formulario y el calculo de la renta -->
+    <div class="info">
+        <h1 style="margin: 1em 0 0 3em;">Datos del inmueble</h1>
+        <div class="datos">
+            <h1 class="text_izq">Área de construcción: {{res_const}} m2</h1> 
+            <h1 class="text_der">Área de superficie: {{res_sup}} m2</h1> <br>
+            <h1 class="text_izq">Número de recámaras: {{res_rooms}}</h1> 
+            <h1 class="text_der">Número de baños: {{res_brms}} </h1><br>
+            <h1 class="text_izq">Número de estacionamientos: {{res_prk}}</h1> 
+            <h1 class="text_der">Años de antiguedad: {{res_ant}} años</h1>
+        </div>
+        <p class="textrectangulo">Resultado <br>Dadas las características que nos has compartido, hemos calculado que el precio base para tu departamento es el siguiente: </p> 
+        <h1 class="resultado">Precio de renta sugerido: {{ prediction }}</h1>
+        
+    </div>
+
+    <!-- contenedor con mapa -->
+    <iframe src="/Mapa_Depas_1" frameborder="0" class="mapa"></iframe>
+
+</body>
+</html>

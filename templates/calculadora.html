@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../static/estilosdecalculadora.css" rel="stylesheet" type="text/css">
+  <title>CALCULADORA</title>
+  </head>
+
+<body>
+  <div class="fondo2">
+    <div class="menu">
+        <img class="logo" src="../static/Logotipo_allproperty.png" />
+    </div>
+
+
+<h1>Calculadora</h1>
+<legend>Por favor llena todos los campos a continuación.</legend>
+<h3>Calculadora para Renta de Departamentos</h3>
+ 
+<div class="Formulario">
+  <form action="/result" method="POST" accept-charset="UTF-8">
+    <label for="area_c">Área de construcción</label>
+    <input type="number" id="area_c" name="area_c" >btw:[0-99999]
+    <br>
+    <label for="superficie">Superficie</label>
+    <input type="number" id="superficie" name="superficie">
+    <br>
+    <label for="rooms">Recámaras</label>
+    <select id="rooms" name="rooms">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+    <br>
+    <label for="brms">Baños</label>
+    <select id="brms" name="brms">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+    <br>
+    <label for="prk">Estacionamiento</label>
+    <select id="prk" name="prk">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+    <br>
+    <label for="ant">Años de antiguedad del inmueble</label>
+    <input type="number" id="ant" name="ant">
+    <br>
+    <input class="calcular" type="submit" value="Calcular">
+  </form>
+</div>
+</body>
+</html>
